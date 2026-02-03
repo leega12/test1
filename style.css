@@ -17,11 +17,14 @@
 body {
     font-family: sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: var(--bg-color);
     margin: 0;
+    padding: 20px;
+    gap: 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -147,4 +150,18 @@ h1 {
 
 .contact-link:hover {
     opacity: 0.7;
+}
+
+.comments-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.comments-container h2 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+#disqus_thread {
+    text-align: left;
 }

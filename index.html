@@ -25,6 +25,25 @@
         <button id="generate-btn">Generate Numbers</button>
         <a href="contact.html" class="contact-link">제휴 문의</a>
     </div>
+
+    <div class="container comments-container">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;
+                this.page.identifier = 'lotto-generator';
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://test1-vpnhvmodxm.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
